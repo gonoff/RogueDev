@@ -14,6 +14,10 @@
 
 # production
 /build
+/dist
+
+# installers
+*.deb
 
 # misc
 .DS_Store

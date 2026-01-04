@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- XP Orb - Small code gem -->
+  <defs>
+    <linearGradient id="xpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#69F0AE"/>
+      <stop offset="100%" style="stop-color:#00C853"/>
+    </linearGradient>
+    <filter id="xpGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Diamond shape -->
+  <polygon points="8,1 15,8 8,15 1,8" fill="url(#xpGrad)" stroke="#B9F6CA" stroke-width="1" filter="url(#xpGlow)"/>
+  <!-- Inner shine -->
+  <polygon points="8,4 11,8 8,12 5,8" fill="#B9F6CA" opacity="0.6"/>
+  <!-- Highlight -->
+  <polygon points="8,3 10,6 8,5 6,6" fill="#fff" opacity="0.8"/>
+</svg>

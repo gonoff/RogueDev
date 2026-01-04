@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Large XP Orb - Bigger code gem -->
+  <defs>
+    <linearGradient id="xpLargeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#69F0AE"/>
+      <stop offset="50%" style="stop-color:#00E676"/>
+      <stop offset="100%" style="stop-color:#00C853"/>
+    </linearGradient>
+    <filter id="xpLargeGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Outer diamond -->
+  <polygon points="12,1 23,12 12,23 1,12" fill="url(#xpLargeGrad)" stroke="#B9F6CA" stroke-width="1.5" filter="url(#xpLargeGlow)"/>
+  <!-- Inner layer -->
+  <polygon points="12,5 18,12 12,19 6,12" fill="#00E676" opacity="0.7"/>
+  <!-- Core -->
+  <polygon points="12,8 15,12 12,16 9,12" fill="#B9F6CA" opacity="0.8"/>
+  <!-- Sparkle highlight -->
+  <polygon points="12,3 14,7 12,6 10,7" fill="#fff" opacity="0.9"/>
+  <!-- Code symbol -->
+  <text x="12" y="14" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle" opacity="0.9">{ }</text>
+</svg>

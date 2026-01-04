@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Python runtime character -->
+  <defs>
+    <linearGradient id="playerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7"/>
+      <stop offset="100%" style="stop-color:#0288D1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Main body (hexagonal/crystal shape) -->
+  <polygon points="32,4 56,18 56,46 32,60 8,46 8,18" fill="url(#playerGrad)" stroke="#81D4FA" stroke-width="2" filter="url(#glow)"/>
+  <!-- Inner core -->
+  <polygon points="32,14 46,22 46,42 32,50 18,42 18,22" fill="#0288D1" stroke="#4FC3F7" stroke-width="1"/>
+  <!-- Python logo stylized -->
+  <circle cx="26" cy="28" r="4" fill="#FFEB3B"/>
+  <circle cx="38" cy="28" r="4" fill="#FFEB3B"/>
+  <!-- Code brackets -->
+  <text x="32" y="44" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle">&lt;/&gt;</text>
+</svg>
